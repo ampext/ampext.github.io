@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#cactus {
+	margin: auto;
+  width: 400px;
+  height: 400px;
+
+  background-image: url("images/cactus.svg");
+
+  animation: levitate 5s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@keyframes levitate{
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0.01deg);
+    
+  }
+
+  100% {
+    transform: translateY(-50px) rotate(0deg);
+  }
+}
